@@ -33,6 +33,9 @@ services:
       - ./logs:/opt/airflow/logs
       - ./plugins:/opt/airflow/plugins
       - ./airflow.cfg:/opt/airflow/airflow.cfg
+      - C:/Users/Expertflow/.dbt:/opt/airflow/.dbt     
+      - ./airbnb_dbt:/opt/airflow/airbnb_dbt
+   
     ports:
       - "8080:8080"
     healthcheck:

@@ -1,0 +1,15 @@
+version: 2
+sources:
+  - name: bronze
+    schema: bronze
+    tables:
+       - name : airbnb_listings_raw
+       - name : 'g01'
+       - name : 'g02'
+       - name : lga_suburb
+       - name : nsw_lga_code
+
+
+models:
+  - name: cleaned_airbnb
+    description: "This model selects Airbnb listings data."
