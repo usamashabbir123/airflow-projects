@@ -1,4 +1,5 @@
 version: 2
+# this is required to reference the source tables in the models
 sources:
   - name: bronze
     schema: bronze
@@ -8,8 +9,3 @@ sources:
        - name : 'g02'
        - name : lga_suburb
        - name : nsw_lga_code
-
-
-models:
-  - name: cleaned_airbnb
-    description: "This model selects Airbnb listings data."
